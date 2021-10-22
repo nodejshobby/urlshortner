@@ -10,7 +10,7 @@ exports.generateUrl = async (req, res) => {
   const { url } = req.body
 
   if (!url) return res.status(400).json({ message: 'Provide a url' })
-  if (!validUrl.isUri(url))
+  if (!validUrl.isWebUri(url))
     return res.status(400).json({ message: 'Enter a valid url' })
   try {
     const shortCode = await nanoid(7)
