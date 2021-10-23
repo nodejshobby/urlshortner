@@ -5,6 +5,6 @@
 ## Spin up the server
 `npm run start`
 
-## API BASE URL
+## AN INSTANCE OF THIS APP
 https://bitie.herokuapp.com
 
